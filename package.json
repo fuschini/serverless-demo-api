@@ -1,0 +1,23 @@
+{
+  "name": "serverless-demo-api",
+  "version": "1.0.0",
+  "description": "API project used as a demo in the serverless lunch and learn at KIS",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "serverless deploy --aws-profile ll-kis"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuschini/serverless-demo-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fuschini/serverless-demo-api/issues"
+  },
+  "homepage": "https://github.com/fuschini/serverless-demo-api#readme",
+  "devDependencies": {
+    "serverless-offline": "^11.1.3"
+  }
+}

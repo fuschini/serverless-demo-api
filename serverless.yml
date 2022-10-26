@@ -1,0 +1,27 @@
+service: ll-serverless-api-demo
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  httpApi:
+    id: p2ybmpnkr1
+
+functions:
+  base-api:
+    handler: baseApi.handler
+    events:
+      - httpApi:
+          path: /
+          method: get
+
+  fusca:
+    handler: fusca.handler
+    events:
+      - httpApi:
+          path: /fusca
+          method: get
+
+
+plugins:
+  - serverless-offline
