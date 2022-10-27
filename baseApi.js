@@ -1,5 +1,4 @@
 module.exports.handler = async (event) => {
-  
   console.log(`Request IP address: ${event?.requestContext?.http?.sourceIp}\nRequest timestamp: ${event?.requestContext?.time}`);
 
   return {
