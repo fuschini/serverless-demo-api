@@ -1,5 +1,5 @@
 module.exports.handler = async (event) => {
-  console.log(`Request IP address: ${event?.requestContext?.http?.sourceIp}`);
+  console.log(`Request IP address: ${event?.requestContext?.http?.sourceIp}\nRequest timestamp: ${event?.requestContext?.time}`);
 
   const imageURL = 'https://picsum.photos/200/300'
 
