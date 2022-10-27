@@ -4,8 +4,6 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: nodejs16.x
-  httpApi:
-    id: p2ybmpnkr1
 
 functions:
   base-api:
